@@ -13,6 +13,8 @@ import Hero from "../portfolio-component/Hero";
 
     return(
         <div className='w-full h-[80px] bg-white border-b'>
+
+            {/* added by goodluck */}
         
             <div className="md:max-w-[1600px] max-w-[600px]  
             m-auto w-full h-full flex justify-between items-center">
