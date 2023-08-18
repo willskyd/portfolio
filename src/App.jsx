@@ -1,12 +1,15 @@
-import React,{useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 // import './new react.css';
-import './App.css'
+import "./App.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // import AuthsApp from './project/AuthsApp/AuthsApp';
 // import RegForm from './project/Form-validation/RegForm';
 // import Wills from './project/more';
- import Portfolio from './project/portfolio/Portfolio';
+import Portfolio from "./project/portfolio/Portfolio";
 //  import Navbar from './project/portfolio/Navbar';
-
 
 // import CompoundRate from './project/Compound-rate-calculator/CompoundRate.jsx/CompoundRate';
 // import Progress from './project/progress-Bars/progress-Bars';
@@ -30,28 +33,25 @@ import './App.css'
 // import Wills from './project/more'
 // import East from './project/same'
 
-export default function App() { 
-
- 
-  return(
+export default function App() {
+  return (
     <div>
       {/* <Randomize /> */}
 
       {/* <LikePhotoApp />  */}
- 
+
       {/* <TestimonialApp /> */}
       {/* <Botton text={"Posts"}  */}
-        {/* <AlertsApp />  */}
-       {/* <Temperature /> */}
+      {/* <AlertsApp />  */}
+      {/* <Temperature /> */}
       {/* <SlideToUnlock />   */}
       {/* <Popup /> */}
-       {/* <Progress />  */}
-        {/* <CompoundRate /> */}
-       {/* <AuthsApp />  */}
-       {/* <RegForm /> */}
-       {/* <Wills /> */}
-       <Portfolio />
-       
+      {/* <Progress />  */}
+      {/* <CompoundRate /> */}
+      {/* <AuthsApp />  */}
+      {/* <RegForm /> */}
+      {/* <Wills /> */}
+      <Portfolio />
     </div>
   );
 }
