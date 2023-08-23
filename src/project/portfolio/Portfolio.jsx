@@ -6,6 +6,13 @@ import { AiOutlineClose } from "react-icons/ai";
 import Hero from "../portfolio-component/Hero";
 import Companies from "../portfolio-component/Companies";
 import Courses from "../portfolio-component/Courses";
+import Achievement from "../portfolio-component/Achievement";
+import Categories from "../portfolio-component/Categories";
+import Categorycard from "../portfolio-component/CategoryCard";
+import Feedback from "../portfolio-component/Feedback";
+import Cta from "../portfolio-component/CTA";
+import Footer from "../portfolio-component/footer";
+
 
 const Portfolio = () => {
   const [toogle, setToogle] = useState(false);
@@ -96,6 +103,16 @@ const Portfolio = () => {
       <Companies />
 
       <Courses />
+
+    <Achievement />
+
+    <Categories />
+
+    <Feedback />
+
+    <Cta />
+
+   <Footer />      
     </div>
   );
 };

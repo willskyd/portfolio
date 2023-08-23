@@ -30,7 +30,8 @@ const Hero = () => {
             </div>
 
             <img src={Happy} className="flex  h-[300px] w-[15rem]  rounded-lg
-           md:mx-20 mx-20 my-4 lg:h-[400px] lg:w-[300px] lg:mx-52 md:order-last order-first  " />
+           md:mx-20 mx-20 my-4 lg:h-[400px] lg:w-[300px] lg:mx-52 
+           md:order-last order-first  " />
 
             
             </div>

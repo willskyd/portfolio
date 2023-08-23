@@ -11,8 +11,11 @@ const Courses = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="w-full bg-red-400 py-[50px] min-h-[300px] ">
+    <div className="w-full bg-red-300 py-[50px] min-h-[300px] overflow-hidden">
       <div className="">
+        <h1 className="py-3 text-3xl font-bold mx-5">Most Popular 
+         <span className="text-[#20B486]"> Courses</span></h1>
+         <p className="text-[#6D737A] mx-5 ">Various version have evolved over the years, sometimes by accident.</p>
         <Slider {...settings} className="">
           <Card />
           <Card />
