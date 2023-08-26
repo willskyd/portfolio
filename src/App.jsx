@@ -1,23 +1,21 @@
 import React from "react";
 
-import {Route, 
+import {
+  Route,
   createBrowserRouter,
-   createRoutesFromElements, 
-   Link, 
-   Outlet,
-   RouterProvider
-  } from "react-router-dom"
-// import './new react.css';   
+  createRoutesFromElements,
+  Link,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
+// import './new react.css';
 
- import "./App.css";
-import { Root } from "postcss";
+import "./App.css";
+// import { Root } from "postcss";
 
-import {Home} from './project/Routers/Home'
-import {App2} from './project/Routers/App2'
-import {Contact } from './project/Routers/Contact'
-
-
-
+import { Home } from "./project/Routers/Home";
+import { App2 } from "./project/Routers/App2";
+// import { Contact } from "./project/Routers/Contact";
 
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -50,44 +48,34 @@ import {Contact } from './project/Routers/Contact'
 // import Wills from './project/more'
 // import East from './project/same'
 
-export default function App(props) { 
-  
+export default function App(props) {
   const router = createBrowserRouter(
     createRoutesFromElements(
-    
-      <Route path="/" >
-           <Route index element={ <Home />} />
-           <Route element={ <App2 />} />
-           <Route element={ <Contact />} />
-
+      <Route path="/">
+        <Route index element={<Home />} />
+        <Route path={"app2"} element={<App2 />} />
+        {/* <Route element={<Contact />} /> */}
       </Route>
-      
     )
-  ) 
-     
-  
-  return ( 
-  
-      <div>
+  );
+
+  return (
+    <div>
       <RouterProvider router={router} />
-      
-  </div>
-      
+    </div>
   );
 }
-   const Root = () => {
+// const Root = () => {
+//   return (
+//     <>
+//       <div>
+//         <Link> Home </Link>
+//         <Link> Data </Link>
+//       </div>
 
-      return (
-        <> 
-        <div>
-      <Link> Home </Link> 
-      <Link> Data </Link> 
-        </div>
-
-        <div>
-          <Outlet />
-        </div>
-      </>
-   ) 
-   }
-
+//       <div>
+//         <Outlet />
+//       </div>
+//     </>
+//   );
+// };
