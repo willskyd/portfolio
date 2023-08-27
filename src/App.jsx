@@ -10,11 +10,11 @@ import {Route,
 // import './new react.css';   
 
  import "./App.css";
-import { Root } from "postcss";
+ import { Root } from "postcss";
 
-import {Home} from './project/Routers/Home'
-import {App2} from './project/Routers/App2'
-import {Contact } from './project/Routers/Contact'
+import {Home} from './Home.jsx'
+import {App2} from './App2,jsx'
+import {Contact } from './Contact.jsx'
 
 
 
@@ -55,7 +55,7 @@ export default function App(props) {
   const router = createBrowserRouter(
     createRoutesFromElements(
     
-      <Route path="/" >
+      <Route path="/" element={ <Root />}>
            <Route index element={ <Home />} />
            <Route element={ <App2 />} />
            <Route element={ <Contact />} />
@@ -75,19 +75,6 @@ export default function App(props) {
       
   );
 }
-   const Root = () => {
-
-      return (
-        <> 
-        <div>
-      <Link> Home </Link> 
-      <Link> Data </Link> 
-        </div>
-
-        <div>
-          <Outlet />
-        </div>
-      </>
-   ) 
-   }
+  
+ 
 
