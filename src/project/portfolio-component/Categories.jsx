@@ -9,7 +9,7 @@ export default function Categories(){
         <div className="w-full bg-[#F0FBF7] py-24">
         <div className="md:max-w-[1480px] m-auto max-w-[600px]">
                         <h1 className=" text-3xl mx-1 font-bold">Most <span 
-                        className="text-[#20B486]">Popular Categories</span>  
+                        className="text-[#20B486]"><a href="">Popular Categories</a></span>  
              </h1> 
             <p className="text-lg py-3 text-gray-600">
                 Various versions have evolved over the years,

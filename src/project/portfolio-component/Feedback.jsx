@@ -35,7 +35,7 @@ const Feedback = () => {
         <div className="w-full bg-[#dcdcdc] py-[50px] min-h-[300px] 
         overflow-hidden ">
             <h1 className="py-3 text-3xl font-bold mx-5">Student' 
-             <span className="text-[#20B486]"> Feedback</span></h1>
+             <span className="text-[#20B486]"> <a href="">Feedback</a></span></h1>
              <p className="text-[#6D737A] mx-5 ">Various version have evolved over the years, sometimes by accident.</p>
           <div className=" -mx-8 md:m-20 md:mx-30 gap-0 md:px-20 md:grid grid-cols-2 px-9">
             <Slider {...settings} className="">

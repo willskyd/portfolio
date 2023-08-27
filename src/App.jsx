@@ -1,14 +1,31 @@
-import React, { useState, useEffect } from "react";
-// import './new react.css';
-import "./App.css";
+import React from "react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import {Route, 
+  createBrowserRouter,
+   createRoutesFromElements, 
+   Link, 
+   Outlet,
+   RouterProvider
+  } from "react-router-dom"
+// import './new react.css';   
+
+ import "./App.css";
+import { Root } from "postcss";
+
+import {Home} from './project/Routers/Home'
+import {App2} from './project/Routers/App2'
+import {Contact } from './project/Routers/Contact'
+
+
+
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 // import AuthsApp from './project/AuthsApp/AuthsApp';
 // import RegForm from './project/Form-validation/RegForm';
 // import Wills from './project/more';
-import Portfolio from "./project/portfolio/Portfolio";
+//  import Portfolio from "./project/portfolio/Portfolio";
 //  import Navbar from './project/portfolio/Navbar';
 
 // import CompoundRate from './project/Compound-rate-calculator/CompoundRate.jsx/CompoundRate';
@@ -33,25 +50,44 @@ import Portfolio from "./project/portfolio/Portfolio";
 // import Wills from './project/more'
 // import East from './project/same'
 
-export default function App() {
-  return (
-    <div>
-      {/* <Randomize /> */}
+export default function App(props) { 
+  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+    
+      <Route path="/" >
+           <Route index element={ <Home />} />
+           <Route element={ <App2 />} />
+           <Route element={ <Contact />} />
 
-      {/* <LikePhotoApp />  */}
-
-      {/* <TestimonialApp /> */}
-      {/* <Botton text={"Posts"}  */}
-      {/* <AlertsApp />  */}
-      {/* <Temperature /> */}
-      {/* <SlideToUnlock />   */}
-      {/* <Popup /> */}
-      {/* <Progress />  */}
-      {/* <CompoundRate /> */}
-      {/* <AuthsApp />  */}
-      {/* <RegForm /> */}
-      {/* <Wills /> */}
-      <Portfolio />
-    </div>
+      </Route>
+      
+    )
+  ) 
+     
+  
+  return ( 
+  
+      <div>
+      <RouterProvider router={router} />
+      
+  </div>
+      
   );
 }
+   const Root = () => {
+
+      return (
+        <> 
+        <div>
+      <Link> Home </Link> 
+      <Link> Data </Link> 
+        </div>
+
+        <div>
+          <Outlet />
+        </div>
+      </>
+   ) 
+   }
+

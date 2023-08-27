@@ -10,8 +10,8 @@ const Hero = () => {
             <div> 
                 <p className="text-2xl py-2 mx-3 text-[#20B486] font-medium">START TO SUCCESS</p>
                 <h1 className="lg:text-[100px] text-5xl mx-1">Access to 
-                <span className="text-[#20B486]">5000+</span>  
-                    Courses from <span className="text-[#20B486]">300</span> Instructors & institution</h1> 
+                <a href="http://www.codingforeverybody.com/" className="text-[#20B486]">5000+</a>  
+                    Courses from <span className="text-[#20B486]"><a href="/">300</a></span> Instructors & institution</h1> 
                 <p className="text-lg text-gray-600">Various versions have evolved over the years,
                    sometimes by accident</p>
                 <form className="max-w-[700px] p-4 shadow-lg rounded-md my-2 flex justify-between">

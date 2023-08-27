@@ -11,18 +11,19 @@ const Cta = () => {
          " />
         <div> 
             <h1 className="lg:text-6xl lg:py-[7rem] text-3xl mx-1 font-bold">
-                Join  <span className="text-[#20B486]">World's Largest </span> 
+                Join  <span className="text-[#20B486]"><a href="">World's Largest</a> </span> 
                  Learning Plaftorm today</h1> 
             <p className="text-2xl text-gray-600 py-4 ">
                 Start Learning by registering for free
                 </p>
-                <button className="md:flex md:flex-col md:justify-start md:gap-4
+              <a href="">  
+              <button className="md:flex md:flex-col md:justify-start md:gap-4
                 md:w-[10rem] 
                 max-[780px]:w-full my-4 px-5 py-4 rounded-md bg-[#20B486]
                  text-white font-bold">
             sign up for free
           </button>
-
+              </a>
         </div>
         
 

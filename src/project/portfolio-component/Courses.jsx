@@ -14,7 +14,7 @@ const Courses = () => {
     <div className="w-full bg-red-300 py-[50px] min-h-[300px] overflow-hidden">
       <div className="">
         <h1 className="py-3 text-3xl font-bold mx-5">Most Popular 
-         <span className="text-[#20B486]"> Courses</span></h1>
+         <span className="text-[#20B486]"> <a href="">Courses</a></span></h1>
          <p className="text-[#6D737A] mx-5 ">Various version have evolved over the years, sometimes by accident.</p>
         <Slider {...settings} className="">
           <Card />

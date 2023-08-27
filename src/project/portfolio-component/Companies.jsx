@@ -11,10 +11,10 @@ const Companies = () => {
             emplooyees keep their skills fresh </p>
 
            <div className="flex justify-center py-6 md:gap-10 gap-6 text-6xl">
-            <BiAlarm />
-            <BiBadge />
-            <BiLogo500Px />
-            <BiDesktop />
+          <a href=""> <BiAlarm  /></a>
+           <a href=""><BiBadge /></a> 
+             <a href=""><BiLogo500Px /></a>
+             <a href=""><BiDesktop /></a>
 
            </div>
 
